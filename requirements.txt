@@ -13,3 +13,9 @@ googletrans
 requests
 gtts
 psutil
+Flask
+gunicorn
+aiohttp
+Flask
+gunicorn
+aiohttp
