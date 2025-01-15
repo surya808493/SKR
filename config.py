@@ -4,23 +4,23 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyro client config
-    API_ID    = os.environ.get("API_ID", "")
-    API_HASH  = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
+    API_ID    = os.environ.get("API_ID", "29453152")
+    API_HASH  = os.environ.get("API_HASH", "2302adc174dbc954ae5081eda5131166")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "7599198539:AAHym4FXFtfOrBfV1vHSezO_C2301mefLJk") 
    
     # database config
-    DB_NAME = os.environ.get("DB_NAME","rename")     
-    DB_URL  = os.environ.get("DB_URL","")
+    DB_NAME = os.environ.get("DB_NAME","Cluster0")     
+    DB_URL  = os.environ.get("DB_URL","mongodb+srv://gd3251791:Qo5atK0UMi03mEe5@cluster0.dh3h6.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 
     # other configs
     BOT_UPTIME  = time.time()
     START_PIC   = os.environ.get("START_PIC", "https://envs.sh/jUp.jpg")
-    ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '').split()]
+    ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '1052054451').split()]
 
     # channels logs
-    FORCE_SUB   = os.environ.get("FORCE_SUB", "TechifyBots") 
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", ""))
-    BIN_CHANNEL = int(os.environ.get("BIN_CHANNEL", ""))
+    FORCE_SUB   = os.environ.get("FORCE_SUB", "public_149") 
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002172276289"))
+    BIN_CHANNEL = int(os.environ.get("BIN_CHANNEL", "-1002472851848"))
 
     # wes response configuration     
     WEBHOOK = bool(os.environ.get("WEBHOOK", True))
